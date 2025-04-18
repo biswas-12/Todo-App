@@ -10,3 +10,10 @@ steps:
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/frontend:latest', './frontend']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/$PROJECT_ID/frontend:latest']
+
+
+
+options:
+  logging: NONE
+
+serviceAccount: 'cloud-chef-439008@appspot.gserviceaccount.com'
